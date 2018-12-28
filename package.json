@@ -1,0 +1,22 @@
+{
+  "name": "sass-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":
+      "node-sass -wr --output-style expanded --indent-type tab --source-map-embed --include-path ./node_modules src/sass/ -o dist/css/",
+    "bs": "browser-sync start --config bs-config.js",
+    "start": "npm run sass & npm run bs"
+  },
+  "keywords": [],
+  "author": "Thomas Hibbard <thomas.hibbard@networkedinsights.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "browser-sync": "^2.26.3"
+  }
+}
